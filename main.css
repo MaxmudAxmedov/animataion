@@ -1,0 +1,41 @@
+body{
+  background-color: green;
+}
+.wrapper{
+  display: flex;
+  justify-content: center;
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 0 20px;
+}
+#left-wheel, #right-wheel{
+  animation: wheel 3s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+#man--wilo{
+  animation: anim 1s infinite linear;
+}
+@keyframes anim{
+  100%{
+    transform: translateY(-1.5px);
+  }
+  50%{
+    transform: translateY(0px);
+  }
+  0%{
+    transform: translateY(-1.5px);
+  }
+}
+
+@keyframes wheel{
+  from{
+    transform: rotateZ(0deg);
+    
+  }
+  to{
+    transform: rotateZ(360deg);
+
+  }
+}
